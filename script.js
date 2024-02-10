@@ -50,6 +50,7 @@ async function fetchWeatherApi() {
     )
       .then((response) => response.json())
       .then((data) => {
+        weatherData.id = data["id"];
         weatherData.city = data["name"];
         weatherData.temp = Math.round(data["main"]["temp"]);
         weatherData.icon = data["weather"][0]["icon"];
@@ -59,7 +60,7 @@ async function fetchWeatherApi() {
       })
       .then(() => createDisplayWeatherLayout(weatherData));
     //  let weatherApi = await response.json();
-    //  console.log(weatherApi);
+    console.log(weatherApi);
   } catch (error) {
     console.error(`Fetching data failed: ${error}`);
   }
@@ -125,17 +126,17 @@ function createDisplayWeatherLayout(weatherData) {
   description.innerHTML = weatherData.description;
   containerSomeWeatherLayout.appendChild(description);
 
-  // const btnDeleteForWeatherLayout = document.createElement("button");
-  // btnDeleteForWeatherLayout.classList.add("btn-delete-for-weather-layout");
-  // const iconBtnDeleteForWeatherLayout = document.createElement("i");
-  // iconBtnDeleteForWeatherLayout.classList.add("material-symbols-outlined");
-  // iconBtnDeleteForWeatherLayout.innerHTML = "delete";
-  // btnDeleteForWeatherLayout.addEventListener("click", () =>
-  //   deleteWeatherLayout()
-  // );
+  const btnDeleteForWeatherLayout = document.createElement("button");
+  btnDeleteForWeatherLayout.classList.add("btn-delete-for-weather-layout");
+  const iconBtnDeleteForWeatherLayout = document.createElement("i");
+  iconBtnDeleteForWeatherLayout.classList.add("material-symbols-outlined");
+  iconBtnDeleteForWeatherLayout.innerHTML = "delete";
+  btnDeleteForWeatherLayout.addEventListener("click", () =>
+    deleteWeatherLayout(weatherData.id)
+  );
 
-  // btnDeleteForWeatherLayout.appendChild(iconBtnDeleteForWeatherLayout);
-  // containerSomeWeatherLayout.appendChild(btnDeleteForWeatherLayout);
+  btnDeleteForWeatherLayout.appendChild(iconBtnDeleteForWeatherLayout);
+  containerSomeWeatherLayout.appendChild(btnDeleteForWeatherLayout);
 
   mainBlock.appendChild(containerSomeWeatherLayout);
 }
@@ -144,5 +145,16 @@ function createDisplayWeatherLayout(weatherData) {
 function createWeatherLayout() {
   fetchWeatherApi();
 }
-
-// function deleteWeatherLayout() {}
+function deleteWeatherLayout(weatherId) {
+  // let data = JSON.parse(localStorage.getItem("weatherApi")) || [];
+  // // Залишити в масиві тільки ті дані, які не мають ідентифікатора weatherId
+  // data = data.filter(
+  //   (item) => item && item.list && item.list[0] && item.list[0].id !== weatherId
+  // );
+  // // Оновіть локальне сховище
+  // localStorage.setItem("weatherApi", JSON.stringify(data));
+  // // Оновіть відображення
+  // const mainBlock = document.querySelector(".main-block");
+  // mainBlock.innerHTML = "";
+  // getDataFromStorage();
+}
