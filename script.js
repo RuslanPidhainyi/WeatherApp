@@ -145,16 +145,11 @@ function createDisplayWeatherLayout(weatherData) {
 function createWeatherLayout() {
   fetchWeatherApi();
 }
+
 function deleteWeatherLayout(weatherId) {
-  // let data = JSON.parse(localStorage.getItem("weatherApi")) || [];
-  // // Залишити в масиві тільки ті дані, які не мають ідентифікатора weatherId
-  // data = data.filter(
-  //   (item) => item && item.list && item.list[0] && item.list[0].id !== weatherId
-  // );
-  // // Оновіть локальне сховище
-  // localStorage.setItem("weatherApi", JSON.stringify(data));
-  // // Оновіть відображення
-  // const mainBlock = document.querySelector(".main-block");
-  // mainBlock.innerHTML = "";
-  // getDataFromStorage();
+  arrWeatherLayout = arrWeatherLayout.filter(item => item.id !== weatherId);
+  localStorage.setItem("weatherApi", JSON.stringify(arrWeatherLayout));
+  document.querySelector(".main-block").innerHTML = "";
+  displayWeatherLayouts();
 }
+
