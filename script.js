@@ -36,6 +36,7 @@ btnAdd.addEventListener("click", () => {
 btnDelete.addEventListener("click", () => {
   alert("You need refresh web-site");
   localStorage.clear();
+  document.querySelector('.main-block').innerHTML = '';
 });
 
 //Pobierania(Take/dowland) api
@@ -50,11 +51,11 @@ async function fetchWeatherApi() {
     )
       .then((response) => response.json())
       .then((data) => {
-        weatherData.id = data["id"];
-        weatherData.city = data["name"];
-        weatherData.temp = Math.round(data["main"]["temp"]);
-        weatherData.icon = data["weather"][0]["icon"];
-        weatherData.description = data["weather"][0]["description"];
+        weatherData.id = data.id;
+        weatherData.city = data.name;
+        weatherData.temp = Math.round(data.main.temp);
+        weatherData.icon = data.weather[0].icon;
+        weatherData.description = data.weather[0].description;
         arrWeatherLayout.push(weatherData);
         localStorage.setItem("weatherApi", JSON.stringify(arrWeatherLayout));
       })
@@ -146,10 +147,34 @@ function createWeatherLayout() {
   fetchWeatherApi();
 }
 
+//Delete weather layout
 function deleteWeatherLayout(weatherId) {
   arrWeatherLayout = arrWeatherLayout.filter(item => item.id !== weatherId);
   localStorage.setItem("weatherApi", JSON.stringify(arrWeatherLayout));
   document.querySelector(".main-block").innerHTML = "";
   displayWeatherLayouts();
 }
+
+//Update weather data
+function updateWeatherData() {
+  arrWeatherLayout.forEach(async (weatherData, index) => {
+    try {
+      const response = await fetch(
+        `http://api.openweathermap.org/data/2.5/weather?id=${weatherData.id}&units=metric&appid=7f79f3f62c2158a047cee66e08953253`
+      );
+      const data = await response.json();
+      weatherData.temp = Math.round(data.main.temp);
+      weatherData.icon = data.weather[0].icon;
+      weatherData.description = data.weather[0].description;
+      arrWeatherLayout[index] = weatherData;
+      localStorage.setItem("weatherApi", JSON.stringify(arrWeatherLayout));
+    } catch (error) {
+      console.error(`Fetching data failed: ${error}`);
+    }
+  });
+  document.querySelector(".main-block").innerHTML = "";
+  displayWeatherLayouts();
+}
+
+setInterval(updateWeatherData, 1000); // 300_000 ms = 5 min
 
