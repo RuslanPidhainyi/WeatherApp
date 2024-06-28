@@ -7,6 +7,7 @@
 2. [About a App](#aboutaapp)
 3. [User's Interface](#ui)
 4. [How it works](#work)
+5. [Working moment about the code](#code)
 
 <a name="preview"></a>
 ## 1. Preview 📎
@@ -16,19 +17,12 @@
 
 <a name="aboutaapp"></a>
 ## 2. About an App 📟
-The application presents the weather from various locations around the world (temp, humidity, weather-related graphics such as clouds, sunshine, rain, snow, etc.).
-
-Places indicated by the user are stored in (localStorage)
-
-Up to four places can be added/removed
-
-Automatic weather update every 60 seconds
-
-
+- The application presents the weather from various locations around the world (temp, humidity, weather-related graphics such as clouds, sunshine, rain, snow, etc.).
+- Places indicated by the user are stored in (localStorage)
+- Up to four places can be added/removed
+- Automatic weather update every 60 seconds
 
 https://github.com/RuslanPidhainyi/WeatherApp/assets/136593314/b1e46a58-a8c2-4d95-99c7-2166a56e983f
-
-
 
 <a name="ui"></a>
 ## 3. User's Interface 📲
@@ -36,7 +30,7 @@ https://github.com/RuslanPidhainyi/WeatherApp/assets/136593314/b1e46a58-a8c2-4d9
 ![Screenshot 2024-06-28 150307](https://github.com/RuslanPidhainyi/WeatherApp/assets/136593314/dcca15ba-01c4-4005-9321-03c98cd8f71c)
 
 <a name="work"></a>
-## 4. How it works 💻
+## 4. How it works ⚙️
 I. We need to enter the name of the city or country and click on the plus button to add a widget with our weather
 
 https://github.com/RuslanPidhainyi/WeatherApp/assets/136593314/22c5e86a-f109-4095-adae-8aadf9cba18e
@@ -48,6 +42,15 @@ https://github.com/RuslanPidhainyi/WeatherApp/assets/136593314/dd2e9a0f-f322-4df
 III. Up to four places can be added/removed
 
 https://github.com/RuslanPidhainyi/WeatherApp/assets/136593314/1a53e787-0337-4e9b-9388-84bf735a75cc
+
+<a name="code"></a>
+## 5. Working moment about the code 💻
+
+I used it in my project:
+- Fetch API
+- LocalStoradge
+- setInterval
+
 
 
 
