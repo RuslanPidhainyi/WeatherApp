@@ -1,4 +1,4 @@
-# Weather Application
+# Weather Application 🌥️
 > JavaScript Weather Application
 >
 > <a name="top"></a>
@@ -9,7 +9,7 @@
 4. [How it works](#work)
 
 <a name="preview"></a>
-## 1. Preview 👁️
+## 1. Preview 📎
 ![Screenshot 2024-06-27 200358](https://github.com/RuslanPidhainyi/WeatherApp/assets/136593314/60f16d1f-1478-49fc-aa53-3abc8a74eef1)
 ![Screenshot 2024-06-28 150307](https://github.com/RuslanPidhainyi/WeatherApp/assets/136593314/36c1360a-35ba-4dc3-9b94-92d6f5811cb3)
 
@@ -26,6 +26,10 @@ Automatic weather update every 60 seconds
 
 
 
+https://github.com/RuslanPidhainyi/WeatherApp/assets/136593314/b1e46a58-a8c2-4d95-99c7-2166a56e983f
+
+
+
 <a name="ui"></a>
 ## 3. User's Interface 📲
 ![Screenshot 2024-06-27 200358](https://github.com/RuslanPidhainyi/WeatherApp/assets/136593314/ebaf8d0d-92cf-4ec7-9109-76a493c0ad0b)
@@ -34,24 +38,14 @@ Automatic weather update every 60 seconds
 <a name="work"></a>
 ## 4. How it works 💻
 I. We need to enter the name of the city or country and click on the plus button to add a widget with our weather
+https://github.com/RuslanPidhainyi/WeatherApp/assets/136593314/22c5e86a-f109-4095-adae-8aadf9cba18e
 
-https://github.com/RuslanPidhainyi/Symulator-Microprocessor-Intel8086/assets/136593314/69468ca3-0e0e-4466-827e-1b9aaaef9445
+II. If you need to delete the weather, you have to click on the delete button
+https://github.com/RuslanPidhainyi/WeatherApp/assets/136593314/dd2e9a0f-f322-4df9-bf01-40e65f49a556
 
-II. How I entered the value in all registers. I need to select 2 registers and select one of the commands.
+III. Up to four places can be added/removed
+https://github.com/RuslanPidhainyi/WeatherApp/assets/136593314/1a53e787-0337-4e9b-9388-84bf735a75cc
 
-https://github.com/RuslanPidhainyi/Symulator-Microprocessor-Intel8086/assets/136593314/c75eda18-8034-400b-853e-5183bb1e7572
 
-<a name="MOV"></a>
-## 4.1. How does the MOV command work ? ⚙️
-III. The simulator supports MOV commands responsible for transferring data from one register to another register selected by the user. My translation is poor, the first register AL = 00 and the second register BL = 11. It transferred my data from the second register to the first register
 
-https://github.com/RuslanPidhainyi/Symulator-Microprocessor-Intel8086/assets/136593314/40f6f6d7-c8dc-4e53-934b-e3843b6b7d3e
 
-<a name="XCHG"></a>
-## 4.2. How does the XCHG command work ? 🛠️
-IV. Symulator obsługuje Rozkaz XCHG który zmienia dane między rejestrami wybranymi przez 
-użytkownika. Moim przekladem biedzie, pierwszy rejestr AL = 00 i drugi rejestr BL = 11. Zmienilo moi dane między rejestrami
-
-https://github.com/RuslanPidhainyi/Symulator-Microprocessor-Intel8086/assets/136593314/dd3da382-fa46-4797-b3c6-b9536aa6422f
-
-<a name="validation"></a>
