@@ -50,6 +50,7 @@ I used it in my project:
 - Fetch API
 - LocalStoradge
 - setInterval
+- appendChild
 
 
 
