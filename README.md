@@ -44,6 +44,7 @@ II. If you need to delete the weather, you have to click on the delete button
 https://github.com/RuslanPidhainyi/WeatherApp/assets/136593314/dd2e9a0f-f322-4df9-bf01-40e65f49a556
 
 III. Up to four places can be added/removed
+
 https://github.com/RuslanPidhainyi/WeatherApp/assets/136593314/1a53e787-0337-4e9b-9388-84bf735a75cc
 
 
