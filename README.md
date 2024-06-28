@@ -38,9 +38,11 @@ https://github.com/RuslanPidhainyi/WeatherApp/assets/136593314/b1e46a58-a8c2-4d9
 <a name="work"></a>
 ## 4. How it works 💻
 I. We need to enter the name of the city or country and click on the plus button to add a widget with our weather
+
 https://github.com/RuslanPidhainyi/WeatherApp/assets/136593314/22c5e86a-f109-4095-adae-8aadf9cba18e
 
 II. If you need to delete the weather, you have to click on the delete button
+
 https://github.com/RuslanPidhainyi/WeatherApp/assets/136593314/dd2e9a0f-f322-4df9-bf01-40e65f49a556
 
 III. Up to four places can be added/removed
