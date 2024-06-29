@@ -2,7 +2,7 @@
 > JavaScript Weather Application
 >
 > <a name="top"></a>
-##  Contents 🗒️
+##  Contents 📋
 1. [Preview](#preview)
 2. [About a App](#aboutaapp)
 3. [User's Interface](#ui)
@@ -10,13 +10,13 @@
 5. [Working moment about the code](#code)
 
 <a name="preview"></a>
-## 1. Preview 📎
+## 1. Preview 👀
 ![Screenshot 2024-06-27 200358](https://github.com/RuslanPidhainyi/WeatherApp/assets/136593314/60f16d1f-1478-49fc-aa53-3abc8a74eef1)
 ![Screenshot 2024-06-28 150307](https://github.com/RuslanPidhainyi/WeatherApp/assets/136593314/36c1360a-35ba-4dc3-9b94-92d6f5811cb3)
 
 
 <a name="aboutaapp"></a>
-## 2. About an App 📟
+## 2. About an App 👨‍💻
 - The application presents the weather from various locations around the world (temp, humidity, weather-related graphics such as clouds, sunshine, rain, snow, etc.).
 - Places indicated by the user are stored in (localStorage)
 - Up to four places can be added/removed
@@ -30,7 +30,7 @@ https://github.com/RuslanPidhainyi/WeatherApp/assets/136593314/b1e46a58-a8c2-4d9
 ![Screenshot 2024-06-28 150307](https://github.com/RuslanPidhainyi/WeatherApp/assets/136593314/dcca15ba-01c4-4005-9321-03c98cd8f71c)
 
 <a name="work"></a>
-## 4. How it works ⚙️
+## 4. How it works 🔩
 I. We need to enter the name of the city or country and click on the plus button to add a widget with our weather
 
 https://github.com/RuslanPidhainyi/WeatherApp/assets/136593314/22c5e86a-f109-4095-adae-8aadf9cba18e
@@ -44,7 +44,7 @@ III. Up to four places can be added/removed
 https://github.com/RuslanPidhainyi/WeatherApp/assets/136593314/1a53e787-0337-4e9b-9388-84bf735a75cc
 
 <a name="code"></a>
-## 5. Working moment about the code 💻
+## 5. Working moment about the code ☕️
 
 I used it in my project:
 - Fetch API
