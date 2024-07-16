@@ -11,6 +11,9 @@
 
 <a name="preview"></a>
 ## 1. Preview 👀
+
+Data is taken from the <a href="https://openweathermap.org" target="_blank">OpenWeatherMap</a> website, which provides a free API for current weather forecasts in different parts of the world and is considered a REST API
+
 ![Screenshot 2024-06-27 200358](https://github.com/RuslanPidhainyi/WeatherApp/assets/136593314/60f16d1f-1478-49fc-aa53-3abc8a74eef1)
 ![Screenshot 2024-06-28 150307](https://github.com/RuslanPidhainyi/WeatherApp/assets/136593314/36c1360a-35ba-4dc3-9b94-92d6f5811cb3)
 
