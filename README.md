@@ -4,7 +4,7 @@
 > <a name="top"></a>
 ##  Contents 📋
 1. [Preview](#preview)
-2. [About a App](#aboutaapp)
+2. [About an App](#aboutaapp)
 3. [User's Interface](#ui)
 4. [How it works](#work)
 5. [Working moment about the code](#code)
